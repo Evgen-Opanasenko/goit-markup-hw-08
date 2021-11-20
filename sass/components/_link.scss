@@ -1,0 +1,21 @@
+.link {
+  color: var(--title-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
+  &:hover,
+  &:focus {
+    color: var(--hover-color);
+  }
+}
+
+.link.current {
+  color: var(--hover-color);
+  position: relative;
+}
