@@ -48,17 +48,15 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   outline: none;
-  &:hover,
-  &:focus {
-    border-color: var(--hover-color);
-  }
-}
-.client-link {
   @media screen and (min-width: 480px) {
     padding: 16px 52px;
   }
   @media screen and (min-width: 1200px) {
     padding: 16px 32px;
+  }
+  &:hover,
+  &:focus {
+    border-color: var(--hover-color);
   }
 }
 
@@ -86,8 +84,6 @@
     width: calc(100% / 6 - 30px);
   }
 }
-
-// width: calc(100% / 2 - 30 px);
 
 //
 //

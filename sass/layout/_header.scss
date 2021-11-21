@@ -5,7 +5,7 @@
   height: 4px;
   width: 100%;
   background-color: var(--focus-color);
-  bottom: -3px;
+  bottom: -37px;
   border-radius: 2px;
 }
 
@@ -17,8 +17,6 @@
   letter-spacing: 0.02em;
   text-decoration: none;
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -34,44 +32,37 @@
 }
 
 .header-container {
-  display: flex;
-  align-items: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 }
 .header-list {
   display: flex;
-  margin-left: 93px;
+  margin-right: -50px;
 }
-.header-list .item + .item {
-  margin-left: 50px;
-  align-items: center;
-}
-.header-adress {
-  display: flex;
-  margin-left: auto;
-}
+
 .header-logo {
   padding-top: 25px;
   padding-bottom: 24px;
 }
 
-.nav {
-  .link {
-    display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
-  }
-}
 .header {
   .link-contact {
     display: flex;
     align-items: center;
   }
 }
-.header-adress {
-  .item:not(:last-child) {
-    margin-right: 50px;
-  }
-}
+
 .header {
   .icon {
     margin-right: 10px;
@@ -84,18 +75,145 @@
     fill: currentColor;
   }
 }
-.header {
-  .item:hover {
-    color: var (--hover-color);
-  }
-}
+
 .header {
   .link:focus .icon {
     fill: currentColor;
   }
 }
-.header {
-  .item:focuc {
-    color: var (--hover-color);
+
+.header-adress__item {
+  margin-bottom: 10px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 30px;
   }
 }
+
+.header-adress {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: initial;
+    margin-bottom: -10px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-right: -30px;
+  }
+}
+
+.nav {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.header-list__item {
+  margin-right: 50px;
+}
+//
+//
+//
+//
+
+// .link.current::after {
+//   content: '';
+//   position: absolute;
+//   display: block;
+//   height: 4px;
+//   width: 100%;
+//   background-color: var(--focus-color);
+//   bottom: -3px;
+//   border-radius: 2px;
+// }
+
+// .link-contact {
+//   color: var(--text-color);
+//   font-weight: 500;
+//   font-size: 14px;
+//   line-height: 1.14;
+//   letter-spacing: 0.02em;
+//   text-decoration: none;
+//   display: block;
+//   padding-top: 32px;
+//   padding-bottom: 32px;
+//   transition-property: color;
+//   transition-duration: 250ms;
+//   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+//   outline: none;
+//   &:hover,
+//   &:focus {
+//     color: var(--hover-color);
+//   }
+// }
+
+// .header {
+//   border-bottom: 1px solid #ececec;
+// }
+
+// .header-container {
+//   display: flex;
+//   align-items: center;
+// }
+// .header-list {
+//   display: flex;
+//   margin-left: 93px;
+// }
+// .header-list .item + .item {
+//   margin-left: 50px;
+//   align-items: center;
+// }
+// .header-adress {
+//   display: flex;
+//   margin-left: auto;
+// }
+// .header-logo {
+//   padding-top: 25px;
+//   padding-bottom: 24px;
+// }
+
+// .nav {
+//   .link {
+//     display: block;
+//     padding-top: 32px;
+//     padding-bottom: 32px;
+//   }
+// }
+// .header {
+//   .link-contact {
+//     display: flex;
+//     align-items: center;
+//   }
+// }
+// .header-adress {
+//   .item:not(:last-child) {
+//     margin-right: 50px;
+//   }
+// }
+// .header {
+//   .icon {
+//     margin-right: 10px;
+//     fill: var(--text-color);
+//   }
+// }
+
+// .header {
+//   .link:hover .icon {
+//     fill: currentColor;
+//   }
+// }
+// .header {
+//   .item:hover {
+//     color: var (--hover-color);
+//   }
+// }
+// .header {
+//   .link:focus .icon {
+//     fill: currentColor;
+//   }
+// }
+// .header {
+//   .item:focuc {
+//     color: var (--hover-color);
+//   }
+// }

@@ -23,27 +23,27 @@
     <!-- шапка -->
     <header class="header">
       <div class="container header-container">
-        <!--  -->
         <a class="logo header__logo" href="./"
           >Web<span class="header__logo--black">Studio</span></a
         >
         <nav class="nav">
-          <!--  -->
           <ul class="list header-list">
-            <li class="item"><a href="./index.html" class="link">Студия</a></li>
-            <li class="item"><a href="./portfolio.html" class="link current">Портфолио</a></li>
-            <li class="item"><a href="" class="link">Контакты</a></li>
+            <li class="header-list__item"><a href="./index.html" class="link">Студия</a></li>
+            <li class="header-list__item">
+              <a href="./portfolio.html" class="link current">Портфолио</a>
+            </li>
+            <li class="header-list__item"><a href="" class="link">Контакты</a></li>
           </ul>
         </nav>
         <ul class="list header-adress">
-          <li class="item">
+          <li class="header-adress__item">
             <a href="mailto:info@devstudio.com" class="link-contact link"
               ><svg width="16" height="16" class="icon">
                 <use href="./images/symbol-defs.svg#icon-mail"></use></svg
               >info@devstudio.com</a
             >
           </li>
-          <li class="item">
+          <li class="header-adress__item">
             <a href="tel:+380961111111" class="link-contact link">
               <svg width="16" height="16" class="icon">
                 <use href="./images/symbol-defs.svg#icon-tell"></use>
@@ -59,25 +59,25 @@
       <section class="section-portfolio">
         <div class="container">
           <ul class="section-portfolio-filter list">
-            <li class="item">
+            <li class="section-portfolio-filter__item">
               <button type="button" class="button-portfolio">Все</button>
             </li>
-            <li class="item">
+            <li class="section-portfolio-filter__item">
               <button type="button" class="button-portfolio">Веб-сайты</button>
             </li>
 
-            <li class="item">
+            <li class="section-portfolio-filter__item">
               <button type="button" class="button-portfolio">Приложения</button>
             </li>
-            <li class="item">
+            <li class="section-portfolio-filter__item">
               <button type="button" class="button-portfolio">Дизайн</button>
             </li>
-            <li class="item">
+            <li class="section-portfolio-filter__item section-portfolio-filter__item--last">
               <button type="button" class="button-portfolio">Маркетинг</button>
             </li>
           </ul>
           <ul class="section-portfolio-list list">
-            <li class="item">
+            <li class="section-portfolio-list__item">
               <a href="./" class="portfolio-psevdo-link">
                 <div class="portfolio-wrapper-text">
                   <img
@@ -98,7 +98,7 @@
                 </div>
               </a>
             </li>
-            <li class="item">
+            <li class="section-portfolio-list__item">
               <a href="./" class="portfolio-psevdo-link">
                 <div class="portfolio-wrapper-text">
                   <img
@@ -114,12 +114,12 @@
                   </p>
                 </div>
                 <div class="name">
-                  <h3 class="title">Постер New Orlean vs Golden</h3>
+                  <h3 class="title">Постер New Orlean vs Golden Star</h3>
                   <p class="variety">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="item">
+            <li class="section-portfolio-list__item">
               <a href="./" class="portfolio-psevdo-link">
                 <div class="portfolio-wrapper-text">
                   <img
@@ -140,7 +140,7 @@
                 </div>
               </a>
             </li>
-            <li class="item">
+            <li class="section-portfolio-list__item">
               <a href="./" class="portfolio-psevdo-link">
                 <div class="portfolio-wrapper-text">
                   <img
@@ -161,7 +161,7 @@
                 </div>
               </a>
             </li>
-            <li class="item">
+            <li class="section-portfolio-list__item">
               <a href="./" class="portfolio-psevdo-link">
                 <div class="portfolio-wrapper-text">
                   <img
@@ -182,7 +182,7 @@
                 </div>
               </a>
             </li>
-            <li class="item">
+            <li class="section-portfolio-list__item--last">
               <a href="./" class="portfolio-psevdo-link">
                 <div class="portfolio-wrapper-text">
                   <img
@@ -203,7 +203,7 @@
                 </div>
               </a>
             </li>
-            <li class="item">
+            <li class="section-portfolio-list__item">
               <a href="./" class="portfolio-psevdo-link">
                 <div class="portfolio-wrapper-text">
                   <img
@@ -224,7 +224,7 @@
                 </div>
               </a>
             </li>
-            <li class="item">
+            <li class="section-portfolio-list__item">
               <a href="./" class="portfolio-psevdo-link">
                 <div class="portfolio-wrapper-text">
                   <img
@@ -245,7 +245,7 @@
                 </div>
               </a>
             </li>
-            <li class="item">
+            <li class="section-portfolio-list__item">
               <a href="./" class="portfolio-psevdo-link">
                 <div class="portfolio-wrapper-text">
                   <img
@@ -272,7 +272,7 @@
     </main>
     <!-- подвал -->
     <footer class="footer">
-      <div class="container">
+      <div class="container footer--container">
         <div class="footer-left">
           <a class="logo" href="/">Web<span class="footer__logo--white">Studio</span></a>
           <address class="address-footer">г. Киев, пр-т Леси Украинки, 26</address>
