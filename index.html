@@ -28,9 +28,11 @@
         >
         <nav class="nav">
           <ul class="list header-list">
-            <li class="header-list__item"><a href="./index.html" class="link">Студия</a></li>
             <li class="header-list__item">
-              <a href="./portfolio.html" class="link current">Портфолио</a>
+              <a href="./index.html" class="link current">Студия</a>
+            </li>
+            <li class="header-list__item">
+              <a href="./portfolio.html" class="link">Портфолио</a>
             </li>
             <li class="header-list__item"><a href="" class="link">Контакты</a></li>
           </ul>
@@ -58,6 +60,72 @@
           </svg>
         </button>
       </div>
+      <!-- ============================================== -->
+      <div class="mob-menu is-hidden">
+        <div class="menu-top">
+          <button type="button" class="menu-close">
+            <svg width="30" height="30" class="icon-close-menu">
+              <use href="./images/symbol-defs.svg#icon-close-black"></use>
+            </svg>
+          </button>
+          <ul class="mob-menu-list list">
+            <li class="mob-menu-item">
+              <a href="./index.html" class="mob-menu-link link">Студия</a>
+            </li>
+            <li class="mob-menu-item">
+              <a href="./portfolio.html" class="mob-menu-link link">Портфолио</a>
+            </li>
+            <li class="mob-menu-item">
+              <a href="" class="mob-menu-link link">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <div class="menu-bottom">
+          <div class="menu-soc-wrap">
+            <a href="tel:+380961111111" class="mob-menu-tel link">+38 096 111 11 11</a>
+            <a href="mailto: info@devstudio.com" class="mob-menu-mail link">info@devstudio.com</a>
+
+            <div class="menu-soc-link-wrap">
+              <ul class="list menu-soc-list">
+                <li class="menu-soc-item">
+                  <a href="" class="link menu-soc-link"
+                    ><svg class="menu-soc-icon">
+                      <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                    </svg>
+                    <div class="menu-soc-item-text">Instagram</div></a
+                  >
+                </li>
+                <li class="menu-soc-item">
+                  <a href="" class="link menu-soc-link"
+                    ><svg class="menu-soc-icon">
+                      <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                    </svg>
+                    <div class="menu-soc-item-text menu-soc-item-text--left">Twitter</div></a
+                  >
+                </li>
+                <li class="menu-soc-item">
+                  <a href="" class="link menu-soc-link"
+                    ><svg class="menu-soc-icon">
+                      <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                    </svg>
+                    <div class="menu-soc-item-text menu-soc-item-text--right">Facebook</div></a
+                  >
+                </li>
+                <li class="menu-soc-item">
+                  <a href="" class="link menu-soc-link"
+                    ><svg class="menu-soc-icon">
+                      <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                    </svg>
+                    <div class="menu-soc-item-text">LinkedIn</div></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ============================================ -->
     </header>
     <main>
       <!--section-hero-->
@@ -127,36 +195,62 @@
           <ul class="list">
             <li class="item">
               <div class="wrapper">
-                <img
-                  src="./images/box-1s.jpg"
-                  alt="написание кода на планшете"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/directions/img-desktop-1x1.jpg 1x,
+                      ./images/directions/img-desktop-2x1.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    src="./images/box-1s.jpg"
+                    alt="написание кода на планшете"
+                    width="370"
+                    height="294"
+                  />
+                </picture>
 
                 <p class="text">Десктопные приложения</p>
               </div>
             </li>
             <li class="item">
               <div class="wrapper">
-                <img
-                  src="./images/box-2s.jpg"
-                  alt="смартфон в руках, во время его настройки через ПК"
-                  width="370"
-                  height="294"
-                />
-
+                <picture>
+                  <source
+                    srcset="
+                      ./images/directions/img-desktop-1x2.jpg 1x,
+                      ./images/directions/img-desktop-2x2.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    src="./images/box-2s.jpg"
+                    alt="смартфон в руках, во время его настройки через ПК"
+                    width="370"
+                    height="294"
+                  />
+                </picture>
                 <p class="text">Мобильные приложения</p>
               </div>
             </li>
             <li class="item">
               <div class="wrapper">
-                <img
-                  src="./images/box-3s.jpg"
-                  alt="работа с цветовой гаммой на планшете"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/directions/img-desktop-1x3.jpg 1x,
+                      ./images/directions/img-desktop-2x3.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    src="./images/box-3s.jpg"
+                    alt="работа с цветовой гаммой на планшете"
+                    width="370"
+                    height="294"
+                  />
+                </picture>
 
                 <p class="text">Дизайнерские решения</p>
               </div>
@@ -170,7 +264,31 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="secnion-comand-title-list list">
             <li class="item">
-              <img src="./images/team-1s.jpg" alt="Дима Демьяненко" width="270" height="260" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/our-team/img1-desktop-1x.jpg 1x,
+                    ./images/our-team/img1-desktop-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/our-team/img1-tablet-1x.jpg 1x,
+                    ./images/our-team/img1-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/our-team/img1-mob-1x.jpg 1x,
+                    ./images/our-team/img1-mob-2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img src="./images/team-1s.jpg" alt="Дима Демьяненко" width="270" height="260" />
+              </picture>
+
               <h3 class="title">Игорь Демьяненко</h3>
               <p class="position">Product Designer</p>
               <ul class="list soc-list">
@@ -201,7 +319,31 @@
               </ul>
             </li>
             <li class="item">
-              <img src="./images/team-2s.jpg" alt="Ольга Репина" width="270" height="260" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/our-team/img2-desktop-1x.jpg 1x,
+                    ./images/our-team/img2-desktop-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/our-team/img2-tablet-1x.jpg 1x,
+                    ./images/our-team/img2-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/our-team/img2-mob-1x.jpg 1x,
+                    ./images/our-team/img2-mob-2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img src="./images/team-2s.jpg" alt="Ольга Репина" width="270" height="260" />
+              </picture>
+
               <h3 class="title">Ольга Репина</h3>
               <p class="position">Frontend Developer</p>
               <ul class="list soc-list">
@@ -232,7 +374,31 @@
               </ul>
             </li>
             <li class="item">
-              <img src="./images/team-3s.jpg" alt="Николай Тарасов" width="270" height="260" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/our-team/img3-desktop-1x.jpg 1x,
+                    ./images/our-team/img3-desktop-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/our-team/img3-tablet-1x.jpg 1x,
+                    ./images/our-team/img3-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/our-team/img3-mob-1x.jpg 1x,
+                    ./images/our-team/img3-mob-2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img src="./images/team-3s.jpg" alt="Николай Тарасов" width="270" height="260" />
+              </picture>
+
               <h3 class="title">Николай Тарасов</h3>
               <p class="position">Marketing</p>
               <ul class="list soc-list">
@@ -263,7 +429,31 @@
               </ul>
             </li>
             <li class="item">
-              <img src="./images/team-4s.jpg" alt="Михаил Ермаков" width="270" height="260" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/our-team/img4-desktop-1x.jpg 1x,
+                    ./images/our-team/img4-desktop-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/our-team/img4-tablet-1x.jpg 1x,
+                    ./images/our-team/img4-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/our-team/img4-mob-1x.jpg 1x,
+                    ./images/our-team/img4-mob-2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img src="./images/team-4s.jpg" alt="Михаил Ермаков" width="270" height="260" />
+              </picture>
+
               <h3 class="title">Михаил Ермаков</h3>
               <p class="position">UI Designer</p>
               <ul class="list soc-list">
@@ -471,5 +661,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
