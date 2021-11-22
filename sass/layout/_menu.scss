@@ -1,0 +1,22 @@
+.menu-open__btn {
+  outline: none;
+  position: absolute;
+  border: none;
+  width: 30px;
+  height: 30px;
+  top: 10px;
+  right: 18px;
+  padding-top: 5px;
+  padding-left: 5px;
+  background-color: var(--bg-color);
+  transition-property: fill;
+  transition-duration: 250ms;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus .menu-open__icon,
+  &:hover .menu-open__icon {
+    fill: var(--focus-color);
+  }
+}
