@@ -40,6 +40,11 @@
   padding-right: 40px;
   padding-bottom: 48px;
   padding-left: 40px;
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
   @media screen and (min-width: 768px) {
     display: none;
   }

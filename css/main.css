@@ -370,6 +370,12 @@ body {
   padding-left: 40px;
 }
 
+.mob-menu.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
 @media screen and (min-width: 768px) {
   .mob-menu {
     display: none;
